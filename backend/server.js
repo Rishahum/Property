@@ -15,13 +15,13 @@ dotenv.config();
     transaction: String,
     furnishing: String,
     Bedroom: Number,
-    PriceBreakup: String, // Ensure the property name matches the data (remove hyphen)
-    BookingAmount: Number, // Ensure the property name matches the data (remove hyphen)
+    PriceBreakup: String, 
+    BookingAmount: Number, 
     Address: String,
     Contact: String,
   });
 
-// Create a model based on the schema
+
 const User = mongoose.model('infos', infoSchema);
 
 const app = express();
@@ -42,7 +42,6 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 
 app.get('/', async (req, res) => {
   try {
-    // Use the Info model to access the collection and retrieve data
     const data = await User.find();
     res.json(data);
     console.log(data)
