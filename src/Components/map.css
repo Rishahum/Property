@@ -1,0 +1,14 @@
+.map-container{
+    padding:40px;
+    
+   padding-bottom: 0;
+   height: 50rem;
+}
+.map-heading{
+    /* font-size: 50px;
+    margin-bottom:50px;
+    color: black */
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}

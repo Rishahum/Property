@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(251, 245, 239) ;
+}
+.nav-list{
+    margin-right: 2rem;
+}
+.nav-list>ul{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem; 
+}
+.nav-link:hover{
+    font-weight: 700;
+}
+.nav-link{
+    color: black;
+}
